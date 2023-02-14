@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Pacma</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<div class="icons">
+    <div id="login-btn" class="fas fa-user"></div>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</div>
+
+<!-- login form -->
+
+<form action="" class="login-form">
+
+    <h3>Registrarse</h3>
+
+    <input type="email" placeholder="Ingresa tu email" class="box">
+    <input type="password" placeholder="Ingresa tu contraseña" class="box">
+    <div class="remember">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me">Recordarme</label>
+    </div>
+    <a href="#" class="btn">Ingresar</a>
+
+</form>
+
+
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="../index.html" class="logo">
+            <img src="../images/pacmalogo.png" width="100px" alt=""></a>
+
+        <nav class="navbar">
+            <a href="../pages/perros-en-adopcion.html">Perros en adopción</a>
+            <a href="../pages/como-adoptar.html">¿Cómo adoptar?</a>
+            <a href="../pages/los-perdidos.html">Los perdidos</a>
+            <a href="./guia-mascotera.html">Guia Mascotera</a>
+            <a href="./donar.html" class="boton-donar">Donar</a>
+        </nav>
+
+        <div class="icons">
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+        <!-- login form -->
+
+        <form action="" class="login-form">
+
+            <h3>Registrarse</h3>
+
+            <input type="email" placeholder="Ingresa tu email" class="box">
+            <input type="password" placeholder="Ingresa tu contraseña" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Recordarme</label>
+            </div>
+            <a href="#" class="btn">Ingresar</a>
+
+        </form>
+
+    </header>
+
+
+    <main class="main-donar">
+
+
+        <form class="donate-form">
+            <fieldset class="set-amount">
+
+
+                <ul class="amounts">
+                    <li id="amount_total_1">
+                        <input type="radio" value="15" name="amount_total" ng-model="vm.amount.total"
+                            class="amount_total ng-pristine ng-valid" ng-class="{checked: vm.amount.total == 15}"
+                            ng-value="15" id="field-amount_total_1">
+                        <label class="amount_label ng-binding" id="amount_label_1" for="field-amount_total_1"><a
+                                href="https://www.mercadopago.com.ar/checkout/v1/payment/redirect/?fbclid=IwAR2abCIhdlXPikngiT4rpkOtQuidhQAhz4VLX8693LFFQaYA5p88VRaeVlk&preference-id=507505055-92b02291-793e-4780-a419-27d378a579cb"
+                                target="_blank">Donar
+                                $200</a></label></a>
+                    </li>
+                    <li id="amount_total_2">
+                        <input ng-value="35" id="field-amount_total_2" type="radio" value="35"
+                            ng-model="vm.amount.total" name="amount_total" ng-class="{checked: vm.amount.total == 35}"
+                            class="amount_total ng-pristine ng-valid">
+                        <label class="amount_label ng-binding" id="amount_label_2" for="field-amount_total_2"><a
+                                href="https://www.mercadopago.com.ar/checkout/v1/payment/redirect/?fbclid=IwAR3TAUOYrQzyeUwo-FMBkx_50YXyIQqxjr3SX9FqPa0wJF5lmgSIWTl0v8Q&preference-id=507505055-89c0739a-aca1-4cd3-bf78-260c344eb622"
+                                target="_blank">Donar $300</a></label>
+                    </li>
+                    <li id="amount_total_3">
+                        <input id="field-amount_total_3" ng-value="50" class="amount_total ng-pristine ng-valid"
+                            ng-class="{checked: vm.amount.total == 50}" name="amount_total" ng-model="vm.amount.total"
+                            value="50" type="radio">
+                        <label class="amount_label ng-binding" id="amount_label_3" for="field-amount_total_3"><a
+                                href="https://www.mercadopago.com.ar/checkout/v1/payment/redirect/35f7f7da-f52a-4df3-bf11-78da1bab2d2f/review/?fbclid=IwAR2_HTJEps2s33RyzPssLJi3aSi1TOo5fl2pXPKf0tAF6a_rEFpgMg8GNsc&preference-id=507505055-889b4b09-7209-4a9d-928b-93a9058fb90c&p=729ae9bedecdda9b20c661ce7d5369f0"
+                                target="_blank">Donar
+                                $500</a></label>
+                    </li>
+                    <li id="amount_total_4">
+                        <input id="field-amount_total_4" ng-value="100" ng-class="{checked: vm.amount.total == 100}"
+                            class="amount_total ng-pristine ng-valid" value="100" type="radio"
+                            ng-model="vm.amount.total" name="amount_total">
+                        <label class="amount_label ng-binding" id="amount_label_4" for="field-amount_total_4"><a
+                                href="https://www.mercadopago.com.ar/checkout/v1/payment/redirect/?preference-id=507505055-758754fd-4909-4895-b288-2fe1f2d01e88&fbclid=IwAR2w2GWu1p3U9k2kMSWkDHvoroTzLyl3jwRdj2QRUcZReFQb9-qsRgL_HCE"
+                                target="_blank">Donar
+                                $600</a></label>
+                    </li>
+                    <li id="amount_total_5">
+                        <input name="amount_total" ng-model="vm.amount.total" type="radio" value="250"
+                            class="amount_total ng-pristine ng-valid" ng-class="{checked: vm.amount.total == 250}"
+                            ng-value="250" id="field-amount_total_5">
+                        <label class="amount_label ng-binding" id="amount_label_5" for="field-amount_total_5"><a
+                                href="https://www.mercadopago.com.ar/checkout/v1/payment/redirect/b3cbdc4d-f0b4-413c-9bdb-12c29953edad/express/?fbclid=IwAR3nDQxdInWktEGFhT7w4RtcvigrSYiBrFPIlYix9l0NMToHv0hvEDPW-E4&preference-id=507505055-b21e16a2-c5e4-42ab-b53f-60e4e5f4d0e0&p=729ae9bedecdda9b20c661ce7d5369f0"
+                                target="_blank">Donar
+                                $1000</a></label>
+                    </li>
+                    <li id="amount_total_6">
+                        <input id="field-amount_total_6" ng-value="500" class="amount_total ng-pristine ng-valid"
+                            ng-class="{checked: vm.amount.total == 500}" value="500" type="radio" name="amount_total"
+                            ng-model="vm.amount.total">
+                        <label class="amount_label ng-binding" id="amount_label_6" for="field-amount_total_6"><a
+                                href="https://www.mercadopago.com.ar/checkout/v1/payment/redirect/6d68e282-d896-4992-97b3-066e355b9856/express/?preference-id=507505055-b5653c26-40ba-4f08-b31f-004da07b8941&fbclid=IwAR0Yws-FAqNtaRzkm5LOP4hyOPcEAvwe0FrPAbsufcn947T_D77CyMXiZQM&p=729ae9bedecdda9b20c661ce7d5369f0"
+                                target="_blank"><a href="">Donar $2000</a></a></label>
+                    </li>
+                    <li id="amount_total_7">
+                        <input ng-value="1000" id="field-amount_total_7" value="1000" type="radio"
+                            ng-model="vm.amount.total" name="amount_total" ng-class="{checked: vm.amount.total == 1000}"
+                            class="amount_total ng-pristine ng-valid">
+                        <label class="amount_label ng-binding" id="amount_label_7" for="field-amount_total_7"><a
+                                href="https://www.mercadopago.com.ar/checkout/v1/payment/redirect/?fbclid=IwAR2abCIhdlXPikngiT4rpkOtQuidhQAhz4VLX8693LFFQaYA5p88VRaeVlk&preference-id=507505055-92b02291-793e-4780-a419-27d378a579cb"
+                                target="_blank">donar $5000</a></label>
+                    </li>
+
+                    <li id="amount_total_other">
+                        <input id="field-amount_otherchk" class="amount_total ng-pristine ng-valid"
+                            ng-model="vm.amount.total" name="amount_total" value="other" type="radio">
+                        <label id="amount_label_other" for="field-amount_otherchk">Otro</label>
+                        <span class="amount-currency">$</span><input name="amount_other" ng-model="vm.amount.other"
+                            type="number" placeholder="Otro" max="5400" min="3" id="field-amount_text"
+                            autocomplete="off"
+                            class="ng-pristine ng-invalid ng-invalid-required ng-valid-number ng-valid-max ng-valid-min">
+                    </li>
+                </ul>
+            </fieldset>
+            </div>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3><img src="/images/pacmalogo.png" width="90px" alt=""> PACMA</h3>
+                    <p>No compres uno de raza, adoptá uno sin casa.</p>
+                    <p class="links"><i class="fas fa-clock"></i>De lunes a viernes de</p>
+                    <p class="days">8:00AM - 18:00PM</p>
+                </div>
+
+                <div class="box">
+                    <h3>Contactos</h3>
+                    <a href="#" class="links"><i class="fas fa-phone"></i> 02983 58-5025</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i> 2983-15413403</a>
+                    <a href="#" class="links"><i class="fas fa-envelope"></i> pacmaong.tsas@gmail.com</a>
+                    <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Buenos Aires, Tres Arroyos</a>
+                </div>
+
+                <div class="box">
+                    <h3>Links rápidos</h3>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Perros en adopción</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>¿Cómo adoptar?</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Feria PACMA</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Guía Mascotera</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Donar</a>
+                </div>
+
+                <div class="box">
+                    <h3>newsletter</h3>
+                    <p>¡suscribite a los últimos newsletter de pacma y recibí un almanaque!</p>
+                    <input type="email" placeholder="Ingresa yu email" class="email">
+                    <a href="#" class="btn">subscribite</a>
+                    <div class="share">
+                        <a href="https://www.facebook.com/profile.php?id=100064818665694" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/p.a.c.m.ats.as/?hl=es" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="credit">&copy; 2023 PACMA. Todos los derechos reservados por <a href="#" class="link">Emmanuel
+                    Ferretti</a></div>
+
+        </section>
+
+    </footer>
+
+
+
+
+
+    <!-- end -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

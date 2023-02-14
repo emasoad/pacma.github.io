@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Pacma</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="/images/pacmalogo.png">
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="./images/pacmalogo.png" width="100px" alt=""></a>
+
+        <nav class="navbar">
+            <a href="./pages/perros-en-adopcion.html">Perros en adopción</a>
+            <a href="./pages/como-adoptar.html">¿Cómo adoptar?</a>
+            <a href="./pages/los-perdidos.html">Los perdidos</a>
+            <a href="./pages/guia-mascotera.html">Guia Mascotera</a>
+            <a href="./pages/donar.html" class="boton-donar">Donar</a>
+        </nav>
+
+        <div class="icons">
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+        <!-- login form -->
+
+        <form action="" class="login-form">
+
+            <h3>Registrarse</h3>
+
+            <input type="email" placeholder="Ingresa tu email" class="box">
+            <input type="password" placeholder="Ingresa tu contraseña" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Recordarme</label>
+            </div>
+            <a href="#" class="btn">Ingresar</a>
+
+        </form>
+
+    </header>
+
+
+    <!-- end -->
+
+    <!-- home -->
+    <main>
+
+
+        <section class="home" id="home">
+
+            <div class="content">
+                <h3>Este es el lugar
+                    donde podes encontrar a tu nuevo mejor amigo</h3>
+                <a href="./pages/perros-en-adopcion.html" class="btn">Adopta a tu amigo</a>
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <!-- end -->
+
+    <!-- about -->
+
+    <section class="about" id="about">
+
+        <h2 class="deco-title">About us</h2>
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="images/chewy-1p7TrM0LkXc-unsplash.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">¿Qué es PACMA? </h3>
+                <p>Somos un grupo de personas que compartimos las mismas ganas de cambiar la realidad de muchos animales
+                    y el motor que nos impulsa a hacerlo es el amor hacia ellos.
+                    Nuestro objetivo principal es la educación sobre la tenencia responsable de mascotas con todo lo que
+                    eso conlleva, la importancia de la esterilización de perros y gatos (machos y hembras) de forma
+                    temprana y sistemática, y la concientización sobre el cuidado del medio ambiente.
+                    En nuestra pagina tendrán lugar las adopciones, animales perdidos y encontrados y los pedidos de
+                    ayuda a los que responderemos en la medida que podamos.
+                </p>
+
+                <div class="icons-container">
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="50px">
+                            <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M312 24V34.5c6.4 1.2 12.6 2.7 18.2 4.2c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5c-7.3-.1-14.7 1.7-19.4 4.4c-2.1 1.3-3.1 2.4-3.5 3c-.3 .5-.7 1.2-.7 2.8c0 .3 0 .5 0 .6c.2 .2 .9 1.2 3.3 2.6c5.8 3.5 14.4 6.2 27.4 10.1l.9 .3 0 0c11.1 3.3 25.9 7.8 37.9 15.3c13.7 8.6 26.1 22.9 26.4 44.9c.3 22.5-11.4 38.9-26.7 48.5c-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24V220.6c-9.5-2.3-18.2-5.3-25.6-7.8c-2.1-.7-4.1-1.4-6-2c-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6 .9 5 1.7 7.3 2.5c13.6 4.6 23.4 7.9 33.9 8.3c8 .3 15.1-1.6 19.2-4.1c1.9-1.2 2.8-2.2 3.2-2.9c.4-.6 .9-1.8 .8-4.1l0-.2c0-1 0-2.1-4-4.6c-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4c-13.5-8.1-26.5-22-26.6-44.1c-.1-22.9 12.9-38.6 27.7-47.4c6.4-3.8 13.3-6.4 20.2-8.2V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z" />
+                        </svg>
+                        <h3>Dona</h3>
+                    </div>
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50px">
+                            <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M253.4 2.9C249.2 1 244.7 0 240 0s-9.2 1-13.4 2.9L38.3 82.8C16.3 92.1-.1 113.8 0 140c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C438.7 420.7 479.5 239.2 480 140c.1-26.2-16.3-47.9-38.3-57.2L253.4 2.9zM144.9 286.2c4.8 1.2 9.9 1.8 15.1 1.8c35.3 0 64-28.7 64-64V160h44.2c12.1 0 23.2 6.8 28.6 17.7L304 192h64c8.8 0 16 7.2 16 16v32c0 44.2-35.8 80-80 80H256v50.7c0 7.3-5.9 13.3-13.3 13.3c-1.8 0-3.6-.4-5.2-1.1l-98.7-42.3c-6.6-2.8-10.8-9.3-10.8-16.4c0-2.8 .6-5.5 1.9-8l15-30zM144 160h40 8v32 32c0 17.7-14.3 32-32 32s-32-14.3-32-32V176c0-8.8 7.2-16 16-16zm128 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z" />
+                        </svg>
+                        <h3>Castra</h3>
+                    </div>
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="50px">
+                            <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M309.6 158.5L332.7 19.8C334.6 8.4 344.5 0 356.1 0c7.5 0 14.5 3.5 19 9.5L392 32h52.1c12.7 0 24.9 5.1 33.9 14.1L496 64h56c13.3 0 24 10.7 24 24v24c0 44.2-35.8 80-80 80H464 448 426.7l-5.1 30.5-112-64zM416 256.1L416 480c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V364.8c-24 12.3-51.2 19.2-80 19.2s-56-6.9-80-19.2V480c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V249.8c-28.8-10.9-51.4-35.3-59.2-66.5L1 167.8c-4.3-17.1 6.1-34.5 23.3-38.8s34.5 6.1 38.8 23.3l3.9 15.5C70.5 182 83.3 192 98 192h30 16H303.8L416 256.1zM464 80a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z" />
+                        </svg>
+                        <h3>Adopta</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- end -->
+
+    <!-- gallery -->
+
+    <section class="gallery" id="gallery">
+
+        <h2 class="heading">Algunas fotos del predio</h2>
+
+        <div class="swiper gallery-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/anna-dudkova-urs_y9NwFcc-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/bruce-warrington-WSAOGHKEqFc-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/chewy-fGxiRXr2oZg-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/chewy-1p7TrM0LkXc-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- animals -->
+
+    <section class="animal" id="animal">
+
+        <h2 class="heading">Perritos según edad</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/cachorrito1.jpg" alt="">
+                <div class="content">
+                    <h3>Cachorritos</h3>
+                    <a href="./pages/perros-en-adopcion.html#perros-cachorros" class="btn">¡Conocelos!</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/adoles1.jpg" alt="">
+                <div class="content">
+                    <h3>Adolescentes</h3>
+                    <a href="./pages/perros-en-adopcion.html#perros-adolescentes" class="btn">¡Conocelos!</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/adulto11.jpg" alt="">
+                <div class="content">
+                    <h3>Adultos</h3>
+                    <a href="./pages/perros-en-adopcion.html#perros-adultos" class="btn">¡Conocelos!</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/viejitoo1.jpg" alt="">
+                <div class="content">
+                    <h3>Viejitos</h3>
+                    <a href="./pages/perros-en-adopcion.html#perros-viejitos" class="btn">¡Conocelos!</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- banner -->
+
+    <section class="banner">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>El predio PACMA</h3>
+                <p>El predio de PACMA es un refugio canino en donde se albergan a más de 300 perros. Para los que
+                    iniciamos PACMA el refugio es un gran sueño, acompañado con la idea de tener una política de estado
+                    en la protección animal y cuidado de los perros. Esta comunión entre lo público y privado ha dado
+                    muy buenos resultados. Es de todas las personas que a diario trabajan en la noble causa del cuidado
+                    animal y del ambiente. En estos dos años, es imposible de calcular la cantidad de mascotas que
+                    fueron rescatadas, cuidadas, alimentadas y sanadas en el refugio, para luego ser adoptadas por una
+                    familia de nuestra ciudad.
+                    Ese trabajo silencioso, con la colaboración constante del municipio, hace que se le infle el pecho
+                    de orgullo a cada uno de los vecinos que iniciaron este proyecto.
+                </p>
+
+            </div>
+
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/7gprRItSitE" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- pricing -->
+
+    <section class="pricing" id="pricing">
+
+        <h2 class="heading">¿Cómo contribuir?</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/donacion.jpg" alt="">
+                <h3>Haciendo una donación</h3>
+                <h4 class="price"><a href="./pages/donar.html">Donar</a></h4>
+                <p>Lo que tengas y puedas es bienvenido.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/dog-walk.jpg" alt="">
+                <h3>Apadrinar un perrito</h3>
+                <h4 class="price"><a href="./pages/perros-en-adopcion.html">Conocelos</a></h4>
+                <p>Podes apadrinar un perrito y sacarlos a pasear y buscarle un tutor definitivo.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/bruce-warrington-WSAOGHKEqFc-unsplash.jpg" alt="">
+                <h3>Castrando</h3>
+                <h4 class="price"><a href="
+                        https://wa.me/549298315413403/?text=¡Hola!%20quisiera%20pedir%20un%20turno%20para%20castrar."
+                        class="float" target="_blank">Pedí turno acá</a></h4>
+                <p>Castrar es un derecho y una obligación. </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- contact -->
+
+    <section class=" contact" id="contact">
+
+        <h2 class="heading">contacto</h2>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="nombre">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="número">
+                <input type="text" placeholder="Razón">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+            <a href="#" class="btn">Enviar mensaje</a>
+
+        </form>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- footer -->
+    <footer>
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3><img src="/images/pacmalogo.png" width="90px" alt=""> PACMA</h3>
+                    <p>No compres uno de raza, adoptá uno sin casa.</p>
+                    <p class="links"><i class="fas fa-clock"></i>De lunes a viernes de</p>
+                    <p class="days">8:00AM - 18:00PM</p>
+                </div>
+
+                <div class="box">
+                    <h3>Contactos</h3>
+                    <a href="#" class="links"><i class="fas fa-phone"></i> 02983 58-5025</a>
+                    <a href="#" class="links"><i class="fas fa-phone"></i> 2983-15413403</a>
+                    <a href="#" class="links"><i class="fas fa-envelope"></i> pacmaong.tsas@gmail.com</a>
+                    <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Buenos Aires, Tres Arroyos</a>
+                </div>
+
+                <div class="box">
+                    <h3>Links rápidos</h3>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Perros en adopción</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>¿Cómo adoptar?</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Feria PACMA</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Guía Mascotera</a>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Donar</a>
+                </div>
+
+                <div class="box">
+                    <h3>newsletter</h3>
+                    <p>¡suscribite a los últimos newsletter de pacma y recibí un almanaque!</p>
+                    <input type="email" placeholder="Ingresa yu email" class="email">
+                    <a href="#" class="btn">subscribite</a>
+                    <div class="share">
+                        <a href="https://www.facebook.com/profile.php?id=100064818665694" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/p.a.c.m.ats.as/?hl=es" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="credit">&copy; 2023 PACMA. Todos los derechos reservados por <a href="#" class="link">Emmanuel
+                    Ferretti</a></div>
+
+        </section>
+    </footer>
+
+
+
+
+
+    <!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
